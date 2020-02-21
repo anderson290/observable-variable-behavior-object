@@ -1,0 +1,13 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 mt-4 center-obj">
+            <h1>Variavel por observable</h1>
+            <textarea name="" class="form-control" [(ngModel)]="message" placeholder="Envie uma mensagem para o componente de baixo" id="" cols="30" rows="10"></textarea>
+            <button  type="button" class="btn btn-primary mt-2"(click)="sendMessage()">Enviar</button>
+            <hr/>
+            
+            <app-recieve-variable></app-recieve-variable>
+        </div>
+    </div>
+</div>
