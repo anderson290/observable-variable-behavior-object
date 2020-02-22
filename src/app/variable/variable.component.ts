@@ -25,4 +25,19 @@ export class VariableComponent implements OnInit {
     this.behaviorService.setMessage(this.message);
   }
 
+  getDados(){
+    this.behaviorService.metodoGet().subscribe(retorno=>{
+      //retorno da api
+      console.log(retorno);
+    })
+  }
+
+  postDados(parametro){
+    //passando parametro para o metodo post
+    this.behaviorService.metodoPost(parametro).subscribe(retorno=>{
+      //retorno da api
+      console.log(retorno);
+    })
+  }
+
 }
